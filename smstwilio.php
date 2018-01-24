@@ -29,11 +29,11 @@ echo $message->body;
    "date_sent": "Mon, 16 Aug 2010 03:45:03 +0000",
    "date_updated": "Mon, 16 Aug 2010 03:45:03 +0000",
    "direction": "outbound-api",
-   "from": "+14158141829",
-   "price": "-0.02000",
+   "from": "",
+   "price": "",
    "sid": "",
    "status": "sent",
-   "to": "+15558675310",
+   "to": "",
    "uri": "" 
 }
 
