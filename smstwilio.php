@@ -4,21 +4,21 @@ require_once '/path/to/vendor/autoload.php'; // Loads the library
 use Twilio\Rest\Client;
 
 // Your Account Sid and Auth Token from twilio.com/user/account
-$sid = "ACfec6f7326ee1656c00c1570197294f84";
+$sid = "";
 $token = "your_auth_token";
 $client = new Client($sid, $token);
 
 // Get an object from its sid. If you do not have a sid,
 // check out the list resource examples on this page
 $message = $client
-    ->messages("MM800f449d0399ed014aae2bcc0cc2f2ec")
+    ->messages("")
     ->fetch();
 
 echo $message->body;
 
 /* output json format :
 {
-   "account_sid": "ACfec6f7326ee1656c00c1570197294f84",
+   "account_sid": "",
    "api_version": "2010-04-01",
    "body": "Problems in the Holodeck again! Can you help troubleshoot?",
    "error_code": null,
@@ -31,10 +31,10 @@ echo $message->body;
    "direction": "outbound-api",
    "from": "+14158141829",
    "price": "-0.02000",
-   "sid": "MM800f449d0399ed014aae2bcc0cc2f2ec",
+   "sid": "",
    "status": "sent",
    "to": "+15558675310",
-   "uri": "/2010-04-01/Accounts/ACfec6f7326ee1656c00c1570197294f84/Messages/MM800f449d0399ed014aae2bcc0cc2f2ec.json"
+   "uri": "" 
 }
 
 */
