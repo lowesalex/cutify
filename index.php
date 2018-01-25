@@ -10,10 +10,9 @@
     <h1 class="indexheading">Wellcome to cutify</h1>
     <p>Please fill in the details</p>
     <form action="">
-      <label for="">phone
-      <br><input type="text" class="phone" name="phone" />
-      <br><label for="message" >message
-      <br><input maxlength="160" size="160" type="text" class="message" name="message" /></label></label>
+      <br><input placeholder="phone" type="text" class="phone" name="phone" /></input>
+      <br><textarea placeholder="message" maxlength="160" size="160" type="text" class="message" name="message" /></textarea>
+	  <br> <button type="submit" value="Submit">Submit</button>
     </form>
   </body>
 </html>
