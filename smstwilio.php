@@ -3,9 +3,8 @@
 require_once '/path/to/vendor/autoload.php'; // Loads the library
 use Twilio\Rest\Client;
 
-// Your Account Sid and Auth Token from twilio.com/user/account
-$sid = "";
-$token = "your_auth_token";
+$sid = echo "$siddata"; //get Sid from your twilio.com/user/account
+$token = echo "$authtoken";  //get Auth Token from twilio.com/user/account
 $client = new Client($sid, $token);
 
 // Get an object from its sid. If you do not have a sid,
